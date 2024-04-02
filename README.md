@@ -12,4 +12,4 @@
 - Jupyter Notebook - IDE
   
 # Architecture Diagram
-! [Architecture Diagram](Architecure Diagram.png)
+! [Architecture Diagram](https://github.com/nikitadevendran/kafka-stock-market/blob/main/Architecure%20Diagram.png)
