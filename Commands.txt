@@ -5,10 +5,17 @@ tar -xvf kafka_2.12-3.7.0.tgz
 
 -------------------------------
 
-Install JDK
+Install JDK (I have installed using coretto or you could just use this command instead "sudo yum install java-1.8.0-openjdk")
 
 java -version
 
+sudo wget -O /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo
+
+sudo yum update
+
+sudo yum install java-1.8.0-amazon-corretto-devel
+
+java -version
 
 --------------------------------
 
