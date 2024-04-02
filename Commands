@@ -1,0 +1,77 @@
+Install Kafka in your system
+
+wget https://downloads.apache.org/kafka/3.7.0/kafka_2.12-3.7.0.tgz
+tar -xvf kafka_2.12-3.7.0.tgz
+
+-------------------------------
+
+Install JDK
+
+java -version
+
+
+--------------------------------
+
+Move to the Kafka Directory
+
+cd kafka_2.12-3.7.0
+
+--------------------------------
+
+Start Zookeper 
+
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+--------------------------------
+
+Open a new terminal and duplicate the session
+
+Create more memory allocation
+
+export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"
+
+Move to the Kafka directory and start the Kafka Server
+
+cd kafka_2.12-3.7.0
+
+bin/kafka-server-start.sh config/server.properties
+
+It is pointing to private server , change server.properties so that it can run in public IP 
+
+Do a "sudo nano config/server.properties" - change ADVERTISED_LISTENERS to public ip of the EC2 instance
+
+Start the Kafka server again
+
+--------------------------------
+
+Open a new terminal and duplicate the session
+
+Move to the Kafka Directory
+
+cd kafka_2.12-3.7.0
+
+Create a new topic
+
+bin/kafka-topics.sh --create --topic kafka-stock-market --bootstrap-server {Put the Public IP of your EC2 Instance:9092} --replication-factor 1 --partitions 1
+
+Start the producer server only after topic is created
+
+bin/kafka-console-producer.sh --topic kafka-stock-market --bootstrap-server {Put the Public IP of your EC2 Instance:9092} 
+
+--------------------------------
+
+Open a new terminal and duplicate the session
+
+Move to the Kafka Directory
+
+cd kafka_2.12-3.7.0
+
+Start the consumer server 
+
+bin/kafka-console-consumer.sh --topic kafka-stock-market --bootstrap-server {Put the Public IP of your EC2 Instance:9092}
+
+--------------------------------
+
+
+
+
