@@ -12,4 +12,4 @@
 - Jupyter Notebook - IDE
   
 # Architecture Diagram
-! [Architecture Diagram] (ArchitectureDiagram.png)
+! [Architecture Diagram] (Architecure Diagram.png)
