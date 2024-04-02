@@ -1,0 +1,47 @@
+1. Launch an instance and create key pair.
+
+2. Connect to instance and copy the ssh id from the ssh client.
+
+3. Create a folder to store the key, and navigate to that folder in the prompt.
+
+4. Enter your ssh id to connect to the amazon server as a ec2 user.
+
+5. Download Apache Kafka with the tgz file.
+
+6. Install JDK.
+
+7. Navigate to kafka and start zookeeper.
+
+8. Create new prompt and duplicate the session.
+
+9. Allocate extra space on machine and navigate to kafka.
+
+10. Start the Kafka server and change the configuration properties using the public ip4 address.
+
+11. Again,start the zookeeper and kafka server.
+
+12. Go to security groups and add an inbound rule to allow all the traffic.
+
+13. Open a new prompt and duplicate the session.
+
+14. Create a topic with the public ip of your EC2 instance.
+
+15. Start producer.
+
+16. Open a new prompt and start consumer.
+
+17. Open Jupyter Notebook and create two files, KafkaProducer and KafkaConsumer.
+
+18. Create necessary functions in both to send and receive data.
+
+19. Load the dataset into the producer.
+
+20. Create a s3 bucket.
+
+21. Create a user in IAM, enable administrator access to procure the credentials.
+
+22. Install Amazon CLI and configure your credentials on a new prompt.
+
+23. Create a function to connect your S3 and your producer and consumer.
+
+24.
