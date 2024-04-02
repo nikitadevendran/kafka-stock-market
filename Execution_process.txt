@@ -20,7 +20,7 @@
 
 11. Again,start the zookeeper and kafka server.
 
-12. Go to security groups and add an inbound rule to allow all the traffic.
+12. Go to security groups and add an inbound rule to allow all the traffic from your IP.
 
 13. Open a new prompt and duplicate the session.
 
@@ -44,4 +44,16 @@
 
 23. Create a function to connect your S3 and your producer and consumer.
 
-24.
+24. Ensure that your data is generated and stored dynamically in the respective bucket.
+
+25. Create a role in IAM with the usecase as glue and admin access security policy.
+
+26. Create a glue crawler and add both your previously used bucket as the data source and the newly generated IAM role in the security settings.
+
+27. Then, create a new database and finally finish creation of your crawler.
+
+28. Navigate to Athena and make sure that your table and database is correct.
+
+29. Start running queries to gain output.
+
+30. If there is an error in execution, create a temporary bucket for storage of queries.
