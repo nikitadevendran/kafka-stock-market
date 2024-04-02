@@ -10,4 +10,5 @@
   - EC2
 - Apache Kafka
 - Jupyter Notebook - IDE
-
+  
+# Architecture Diagram
