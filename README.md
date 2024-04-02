@@ -1,4 +1,5 @@
 # Analyzing Stock Market in Real-Time using Apache Kafka
+This project aims to analyze the stock market by means of the dataset in real-time by means of querying to get insights.
 
 # Technology Used
 - Python
