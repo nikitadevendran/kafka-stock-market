@@ -3,13 +3,11 @@ This project aims to analyze the stock market by means of the dataset in real-ti
 
 # Technology Used
 - Python
-- Amazon Web Service (AWS)
-  - S3 (Simple Storage Service)
-  - Athena
-  - Glue Crawler
-  - Glue Catalog
-  - EC2
-- Apache Kafka
+- Mage
+- Google Cloud Platform 
+  - Bucket
+  - BigQuery
+  - 
 - Jupyter Notebook - IDE
   
 # Architecture Diagram
